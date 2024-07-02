@@ -11,54 +11,26 @@ html(lang='en')
     block sidebar
 
       ul(class='active')
-        li(style="margin-top:4rem;")
+        li(style="margin-top:2rem;")
           a(href='/catalog')  
             i.fa.fa-home(style='font-size:20px;')  Home   
         br
         li
           a(href='/catalog/books') 
-           i.fa.fa-account 
-           Accounts
+           i.fa.fa-building	Accounts
         li
-          a(href='/catalog/authors') Leads
+          a(href='/catalog/authors') 
+            i.fa.fa-address-card	Leads
         li
-          a(href='/catalog/genres') Opportunity 
+          a(href='/catalog/genres') 
+            i.fa.fa-handshake-o	Opportunity 
         li
-          a(href='/catalog/bookinstances') Contract 
+          a(href='/catalog/bookinstances') 
+            i.fa.fa-edit	Contract 
 
         br 
         hr
         br
-
-        li
-          a(href='/catalog/author/create') Account Visits 
-        li
-          a(href='/catalog/genre/create') Visit Plans  
-        li
-          a(href='/catalog/book/create') Account Training 
-
-        br 
-        hr
-        br
-
-        li
-          a(href='/catalog/author/create') Account Visits
-        li
-          a(href='/catalog/genre/create') Visit Plans
-        li
-          a(href='/catalog/book/create') Account Training
-
-
-        br 
-        hr
-        br
-
-        li
-          a(href='/catalog/author/create') Account Visits
-        li
-          a(href='/catalog/genre/create') Visit Plans
-        li
-          a(href='/catalog/book/create') Account Training
 
   div(class="layout-content")
           block content
