@@ -3,7 +3,9 @@ html
   title= title
   meta(charset='utf-8')
   meta(name="viewport" content="width=device-width, initial-scale=1")
+  link(rel="stylesheet" href="/stylesheets/style.css")
   link(rel="stylesheet" href="https://cdn.staticfile.net/foundation/5.5.3/css/foundation.min.css")
+  link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-icons@2.0.0/foundation-icons.min.css")
   script(src="https://cdn.staticfile.net/jquery/2.1.1/jquery.min.js")
   script(src="https://cdn.staticfile.net/foundation/5.5.3/js/foundation.min.js")
   script(src="https://cdn.staticfile.net/foundation/5.5.3/js/vendor/modernizr.js")
@@ -11,28 +13,57 @@ html
   body
     div(class="row")
     div(class="large-12 columns")
-      div(class="large-2 columns" style="background-color:grey;")
+      div(class="large-2 columns c-menu-div" )
         ul(class="side-nav")
           li(class="active")
-            a(href="#") Home
+            a(href="#") 
+              i.fi-home(style="font-size:18px;")  Home
           li
-            a(href="#") HTMl1
+            a(href="#") 
+              i.fi-home  Account
           li
-            a(href="#") HTMl1
+            a(href="#") 
+              i.fi-home  Leads
           li
-            a(href="#") HTMl1
+            a(href="#") 
+              i.fi-home  Contact
           li
-            a(href="#") HTMl1
+            a(href="#") 
+              i.fi-home  Opportunity
           li
-            a(href="#") HTMl1
+            a(href="#") 
+              i.fi-home  Contract
           li
-            a(href="#") HTMl1
+            a(href="#") 
+              i.fi-home  Cmpaign
           li
-            a(href="#") HTMl1
+            hr
           li
-            a(href="#") HTMl1
-      div(class="large-10 columns" style="background-color:pink;")
-        div(class="large-12 columns" style="background-color:blue;")
+            a(href="#") 
+              i.fi-home  Visit plant 
+          li 
+            a(href="#") 
+              i.fi-home  Visit Record 
+          li
+            a(href="#") 
+              i.fi-home  Account Meeting 
+          li  
+            hr
+          li
+            a(href="#") 
+              i.fi-home  Seeting
+          li
+            a(href="#") 
+              i.fi-home  Logout 
+          li
+            a(href="#") 
+              i.fi-home  About 
+          li  
+            a(href="#") 
+              i.fi-home  Help
+      div(class="large-10 columns")
+        div(class="large-12 columns c-div-border" )
           block header
-        div(class="large-12 columns" style="background-color:green;")
+        hr
+        div(class="large-12 columns c-div-border")
           block content
