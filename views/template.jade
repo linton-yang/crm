@@ -3,6 +3,7 @@ html
   title= title
   meta(charset='utf-8')
   meta(name="viewport" content="width=device-width, initial-scale=1")
+  link(rel="icon" href="/images/icon.png" type="image/x-icon")
   link(rel="stylesheet" href="/stylesheets/style.css")
   link(rel="stylesheet" href="https://cdn.staticfile.net/foundation/5.5.3/css/foundation.min.css")
   link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-icons@2.0.0/foundation-icons.min.css")
@@ -15,55 +16,63 @@ html
     div(class="large-12 columns")
       div(class="large-2 columns c-menu-div" )
         ul(class="side-nav")
-          li(class="active")
+          li 
+            h6(style="color:darkgrey;")
+              i.fi-list-bullet(style="font-size:18px;font-style:normal;")   Menu List
+          li
             a(href="#") 
               i.fi-home(style="font-size:18px;")  Home
           li
             a(href="#") 
-              i.fi-home  Account
+              i.fi-foundation  Account
           li
             a(href="#") 
-              i.fi-home  Leads
+              i.fi-torso  Leads
           li
             a(href="#") 
-              i.fi-home  Contact
+              i.fi-torsos-all  Contact
           li
             a(href="#") 
-              i.fi-home  Opportunity
+              i.fi-filter  Opportunity
           li
             a(href="#") 
-              i.fi-home  Contract
+              i.fi-page-doc  Contract
           li
             a(href="#") 
-              i.fi-home  Cmpaign
+              i.fi-comments  Cmpaign
           li
             hr
           li
             a(href="#") 
-              i.fi-home  Visit plant 
+              i.fi-address-book  Visit plant 
           li 
             a(href="#") 
-              i.fi-home  Visit Record 
+              i.fi-volume  Visit Record 
           li
             a(href="#") 
-              i.fi-home  Account Meeting 
+              i.fi-book-bookmark  Account Meeting 
           li  
             hr
           li
             a(href="#") 
-              i.fi-home  Seeting
+              i.fi-record  Seeting
           li
             a(href="#") 
-              i.fi-home  Logout 
+              i.fi-power  Logout 
           li
             a(href="#") 
-              i.fi-home  About 
+              i.fi-compass  About 
           li  
             a(href="#") 
-              i.fi-home  Help
+              i.fi-book  Help
       div(class="large-10 columns")
         div(class="large-12 columns c-div-border" )
           block header
         hr
         div(class="large-12 columns c-div-border")
           block content
+    div(class="large-12 columns")
+        div(class="flex-container" style="border-top:1px solid #efefef;")
+          br
+          p(class="text-center") crm demo by node+mysql+jade 
+
