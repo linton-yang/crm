@@ -1,13 +1,39 @@
 extends template
 
-block header 
-  h3 头部导航 今天是北京时间2024-7-3 9：00 am
-
 block content
-  h5= title
-  p Welcome to #[em LocalLibrary], a very basic  website developed as a tutorial example on the Mozilla Developer Network.
+  div(class-"row" style="width:100%")
+    div(class="large-2 columns")
+      p Account 
+    div(class="large-2 columns" style="width:100%;padding:0px;")
+      table(style="width:100%;")
+        thead
+          tr
+            th  Firstname
+            th  Lastname
+            th  Email
+            th  City
+            th  Age
+            th  Country
+        tbody
+          tr
+            td John
+            td Doe
+            td john@example.com
+            td New York
+            td 35
+            td USA
+          tr
+            td John
+            td Doe
+            td john@example.com
+            td New York
+            td 35
+            td USA
 
-  h1 Dynamic content
-
-  p The library has the following record counts:
-
+          tr
+            td John
+            td Doe
+            td john@example.com
+            td New York
+            td 35
+            td USA

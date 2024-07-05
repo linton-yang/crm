@@ -20,3 +20,7 @@ li a i{
 .side-nav li a:not(.button) {
   color:black;
 }
+
+.top-bar ul li{
+  background: none;
+}

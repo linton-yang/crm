@@ -2,7 +2,7 @@ html
   head
   title= title
   meta(charset='utf-8')
-  meta(name="viewport" content="width=device-width, initial-scale=1")
+  //- meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no")
   link(rel="icon" href="/images/icon.png" type="image/x-icon")
   link(rel="stylesheet" href="/stylesheets/style.css")
   link(rel="stylesheet" href="https://cdn.staticfile.net/foundation/5.5.3/css/foundation.min.css")
@@ -14,6 +14,7 @@ html
   body
     div(class="row")
     div(class="large-12 columns")
+    
       div(class="large-2 columns c-menu-div" )
         ul(class="side-nav")
           li 
@@ -65,12 +66,34 @@ html
           li  
             a(href="#") 
               i.fi-book  Help
+
+
       div(class="large-10 columns")
         div(class="large-12 columns c-div-border" )
-          block header
+          nav(class="top-bar" data-topbar style="background:none;color:black")
+            ul(class="title-area" style="background:none;color:black")
+              li(class="name" )
+                h1
+                  a(href="#" style="color:black;")  WebSiteName
+              li(class="toggle-topbar menu-icon" )
+                a(href="#" style="background:none;color:black;")  Menu
+            section(class="top-bar-section")
+              ul(class="left")
+                li(style="background:none;")
+                  a(href="#" style="background:none;color:black")  Home
+                li(style="background:none;")
+                  a(href="#" style="background:none;color:black")  Page 1
+              ul(class="right")
+                li(style="background:none;")
+                  a(href="#" style="background:none;color:black")  Sign Up
+                li(style="background:none;")
+                  a(href="#" style="background:none;color:black")  Login
         hr
-        div(class="large-12 columns c-div-border")
+
+        div(class="large-12 columns c-div-border" style="padding:0px;")
           block content
+
+
     div(class="large-12 columns")
         div(class="flex-container" style="border-top:1px solid #efefef;")
           br
