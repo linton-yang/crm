@@ -2,9 +2,10 @@ extends template
 
 block content
   div(class-"row" style="width:100%")
-    div(class="large-2 columns")
-      p Account 
-    div(class="large-2 columns" style="width:100%;padding:0px;")
+    div(class="large-12 columns")
+      div(style="width:100%;padding:0px;margin-top:5px;")
+        h6 Account 
+    div(class="large-12 columns" style="width:100%;padding:0px;")
       table(style="width:100%;")
         thead
           tr
@@ -16,14 +17,16 @@ block content
             th  Country
         tbody
           tr
-            td John
+            td 
+              a(href="#") John
             td Doe
             td john@example.com
             td New York
             td 35
             td USA
           tr
-            td John
+            td 
+              a(href="#") John
             td Doe
             td john@example.com
             td New York
@@ -31,9 +34,30 @@ block content
             td USA
 
           tr
-            td John
+            td 
+             a(href="#") John
             td Doe
             td john@example.com
             td New York
             td 35
             td USA
+    div(class="large=12 columns")
+      div(class="pagination-centered")
+        ul( class="pagination")
+          li( class="arrow")
+            a(href="#") &laquo;
+          li(class="current")
+            a(href="#") 1
+          li 
+            a(href="#") 2
+          li 
+            a(href="#") 3
+          li 
+            a(href="#") 4
+          li 
+            a(href="#") 5
+          li(class="arrow")
+            a(href="#") &raquo;
+          
+          li(class="arrow")
+            a(href="#") 合计8/10
